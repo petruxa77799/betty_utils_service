@@ -1,17 +1,3 @@
-__all__ = (
-    "EventNotFound",
-    "LeaderboardNotFound",
-    "AuthRequiredException",
-    "EnterEventException",
-    "UserNotAvailable",
-    "WalletNotFound",
-    "WalletNotAvailable",
-    "PartnerNotFound",
-    "UserNotFound",
-    "UserAlreadyExists",
-)
-
-
 class PartnerNotFound(Exception): ...
 
 

@@ -7,6 +7,7 @@ __all__ = [
     "UserErrorCode",
     "WalletErrorCode",
     "PartnerErrorCode",
+    "LeaderboardErrorCode",
 ]
 
 
