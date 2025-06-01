@@ -5,7 +5,7 @@ import jwt
 from jwt.exceptions import InvalidTokenError
 from datetime import datetime, UTC
 
-from .exceptions import AuthRequiredException
+from .exception import AuthRequiredException
 
 __all__ = ["AuthorizationTools", "user_exists"]
 
