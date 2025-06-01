@@ -26,7 +26,9 @@ from ._error_statuses import (
     BETTY_HTTP_500_INTERNAL_SERVER_ERROR,
 )
 
-__all__ = "exception_mapping_dict"
+__all__ = (
+    "exception_mapping_dict",
+)
 
 exception_mapping_dict = {
     PartnerNotFound: (BETTY_HTTP_404_NOT_FOUND, PartnerErrorCode.PARTNER_NOT_FOUND),
