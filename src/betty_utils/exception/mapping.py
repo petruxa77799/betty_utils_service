@@ -1,4 +1,4 @@
-from ._exceptions import (
+from .exceptions import (
     PartnerNotFound,
     EventNotFound,
     LeaderboardNotFound,
