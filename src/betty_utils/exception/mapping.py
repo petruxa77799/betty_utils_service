@@ -9,6 +9,7 @@ from .exceptions import (
     WalletNotAvailable,
     WalletNotFound,
     EnterEventException,
+    CodeNotFoundError,
 )
 from ._error_codes import (
     ErrorCode,
@@ -30,7 +31,6 @@ __all__ = (
     "exception_mapping_dict",
 )
 
-from .. import CodeNotFoundError
 
 exception_mapping_dict = {
     PartnerNotFound: (BETTY_HTTP_404_NOT_FOUND, PartnerErrorCode.PARTNER_NOT_FOUND),
