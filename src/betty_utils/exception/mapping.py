@@ -30,6 +30,8 @@ __all__ = (
     "exception_mapping_dict",
 )
 
+from .. import CodeNotFoundError
+
 exception_mapping_dict = {
     PartnerNotFound: (BETTY_HTTP_404_NOT_FOUND, PartnerErrorCode.PARTNER_NOT_FOUND),
     EventNotFound: (BETTY_HTTP_404_NOT_FOUND, EventErrorCode.EVENT_NOT_FOUND),
@@ -50,5 +52,6 @@ exception_mapping_dict = {
     ),
     UserNotFound: (BETTY_HTTP_404_NOT_FOUND, UserErrorCode.USER_NOT_FOUND),
     UserAlreadyExists: (BETTY_HTTP_400_BAD_REQUEST, UserErrorCode.USER_ALREADY_EXISTS),
+    CodeNotFoundError: (BETTY_HTTP_404_NOT_FOUND, AuthErrorCode.CODE_NOT_FOUND),
     Exception: (BETTY_HTTP_500_INTERNAL_SERVER_ERROR, ErrorCode.UNHANDLED_ERROR),
 }
