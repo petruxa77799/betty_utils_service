@@ -54,6 +54,6 @@ exception_mapping_dict = {
     UserNotFound: (BETTY_HTTP_404_NOT_FOUND, UserErrorCode.USER_NOT_FOUND),
     UserAlreadyExists: (BETTY_HTTP_400_BAD_REQUEST, UserErrorCode.USER_ALREADY_EXISTS),
     CodeNotFoundError: (BETTY_HTTP_404_NOT_FOUND, AuthErrorCode.CODE_NOT_FOUND),
-    TelegramValidationFailError: (BETTY_HTTP_400_BAD_REQUEST, AuthErrorCode.TELEGRAM_VALIDATION_FAILED),
+    TelegramValidationFailError: (BETTY_HTTP_400_BAD_REQUEST, AuthErrorCode.TELEGRAM_VALIDATION_FAIL),
     Exception: (BETTY_HTTP_500_INTERNAL_SERVER_ERROR, ErrorCode.UNHANDLED_ERROR),
 }
