@@ -15,6 +15,7 @@ class AuthErrorCode(StrEnum):
     CODE_EXPIRED_ERROR = "AU_001"
     CODE_NOT_FOUND = "AU_002"
     UNAUTHORIZED = "AU_003"
+    TELEGRAM_VALIDATION_FAIL = "AU_004"
 
 
 class ErrorCode(StrEnum):
