@@ -12,5 +12,5 @@ setup(
     package_dir={"": "src"},
     url="https://github.com/petruxa77799/betty_utils_service",
     keywords="betty utils service",
-    install_requires=["pyjwt==2.10.1", "ujson==5.10.0"],
+    install_requires=["pyjwt==2.10.1", "ujson==5.10.0", "aiokafka==0.12.0"],
 )
