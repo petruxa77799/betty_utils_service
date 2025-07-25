@@ -5,6 +5,7 @@ from aiokafka import AIOKafkaConsumer, TopicPartition, AIOKafkaProducer
 from aiokafka.structs import ConsumerRecord
 
 from betty_utils.logs import logger
+from ujson import dumps
 
 
 __all__ = [
