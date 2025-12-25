@@ -1,4 +1,5 @@
 from logging import Logger
+from typing import Any
 import os
 import sys
 
@@ -63,7 +64,7 @@ def get_handler(
     url: str,
     request_body: str,
     headers: dict,
-) -> (int, str):
+) -> dict[str, Any]:
     status_code, error_code = exception_mapping_dict.get(type(exc))
     if not status_code:
         exc_str = get_pretty_traceback(exc)  # noqa: F841
