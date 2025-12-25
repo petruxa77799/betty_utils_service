@@ -1,8 +1,6 @@
 import asyncio
 from datetime import datetime, timedelta, UTC
 
-__all__ = ["ExpiredCachedDict"]
-
 
 class ExpiredCacheDict:
     def __init__(self):
@@ -53,3 +51,8 @@ class ExpiredCacheDict:
                 self.__expire.pop(key)
                 self.__values.pop(key)
             await asyncio.sleep(6)
+
+
+__all__ = [
+    "ExpiredCacheDict",
+]

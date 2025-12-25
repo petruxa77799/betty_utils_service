@@ -1,1 +1,1 @@
-from .cached_dict import CachedDict
+from .cached_dict import ExpiredCacheDict  # noqa: F401

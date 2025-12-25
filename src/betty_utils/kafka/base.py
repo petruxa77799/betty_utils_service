@@ -108,6 +108,8 @@ class BaseProducer:
 
     async def produce(self, data: dict, key: str, topic: str):
         try:
-            await self._producer.send_and_wait(topic=topic, value=dumps(data).encode(), key=key.encode())
+            await self._producer.send_and_wait(
+                topic=topic, value=dumps(data).encode(), key=key.encode()
+            )
         except Exception as ex:
-            logger.exception(f'Problem with producer {ex}')
+            logger.exception(f"Problem with producer {ex}")
