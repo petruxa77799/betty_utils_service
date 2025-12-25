@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 setup(
     name="betty_utils_service",
     description="betty utils service for auth and errors",
-    version="0.1.3",
+    version="0.2.0",
     license="MIT",
     author="Petr Shcherbakov-Sandu",
     author_email="petrscherbakov93@gmail.com",
