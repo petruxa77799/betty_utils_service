@@ -5,3 +5,4 @@ class KafkaTopics(StrEnum):
     TG_USERS_TOPIC = "dev.tg_users_topic"
     TG_LOST_USERS_TOPIC = "dev.lost_users_topic"
     TG_MESSAGES_TOPIC = "dev.messages_topic"
+    USERS_CALLBACK_TOPIC = "dev.user_callback_topic"

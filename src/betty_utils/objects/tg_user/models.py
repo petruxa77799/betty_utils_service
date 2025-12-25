@@ -8,7 +8,7 @@ class TGUserModel(KafkaBaseModel):
     username: str | None
     partner_id: int
     invite_uuid: UUID | None
-    qr_uuid: UUID | None
+    registration_qr_uuid: UUID | None
 
 
 class TGLostUserModel(KafkaBaseModel):
