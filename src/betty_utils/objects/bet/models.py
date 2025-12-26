@@ -13,6 +13,14 @@ class CreateBetBackgroundModel(CreateBetModel):
     result: int
 
 
+class WsBetMessageModel(KafkaBaseModel):
+    wallet_id: int
+    bet_id: int
+    profit: int
+    right_answer: str | None = None
+    state: BetState
+
+
 __all__ = [
     "CreateBetModel",
     "CreateBetBackgroundModel",

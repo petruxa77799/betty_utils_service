@@ -9,6 +9,6 @@ class KafkaTopics(StrEnum):
     MARKET_RESOLVE_TOPIC = "dev.market_resolve_topic"
     BETS_TOPIC = "dev.bets_topic"
     WS_WALLET_TOPIC = "dev.ws_wallet_topic"
-    PROMO_ANSWER_TOPIC = "dev.promo_answer_topic"
+    PROMO_ANSWER_TOPIC = "dev.promo_answer_topic"  # PROMO_ANSWER_TOPIC -> PROMO_TOPIC
     WALLETS_TOPIC = "dev.wallets_topic"
     WALLETS_CALLBACK_TOPIC = "dev.wallets_callback_topic"
