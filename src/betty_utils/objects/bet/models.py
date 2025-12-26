@@ -24,4 +24,5 @@ class WsBetMessageModel(KafkaBaseModel):
 __all__ = [
     "CreateBetModel",
     "CreateBetBackgroundModel",
+    "WsBetMessageModel",
 ]
