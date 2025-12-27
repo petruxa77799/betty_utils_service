@@ -1,7 +1,7 @@
 from pydantic import constr
 
-from .enums import MessageTypes
 from ..base import KafkaBaseModel
+from .enums import MessageTypes
 
 
 class TGMessageModel(KafkaBaseModel):

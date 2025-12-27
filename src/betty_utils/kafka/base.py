@@ -1,12 +1,11 @@
 import asyncio
 from typing import Optional
 
-from aiokafka import AIOKafkaConsumer, TopicPartition, AIOKafkaProducer
+from aiokafka import AIOKafkaConsumer, AIOKafkaProducer, TopicPartition
 from aiokafka.structs import ConsumerRecord
-
-from betty_utils.logs import logger
 from ujson import dumps
 
+from betty_utils.logs import logger
 
 __all__ = [
     "BaseConsumer",

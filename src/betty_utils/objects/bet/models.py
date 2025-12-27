@@ -1,5 +1,5 @@
-from .enums import BetState, AnswerChoice
 from ..base import KafkaBaseModel
+from .enums import AnswerChoice, BetState
 
 
 class CreateBetModel(KafkaBaseModel):

@@ -1,12 +1,11 @@
-from logging import Logger
-from typing import Any
 import os
 import sys
+from logging import Logger
+from typing import Any
 
 from ujson import dumps
 
 from .mapping import exception_mapping_dict
-
 
 __all__ = ["log_exception", "get_handler", "get_body"]
 

@@ -1,5 +1,4 @@
-from .models import TGUserModel, TGLostUserModel
-
+from .models import TGLostUserModel, TGUserModel
 
 __all__ = [
     "TGUserModel",

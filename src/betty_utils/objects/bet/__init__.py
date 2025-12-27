@@ -1,6 +1,5 @@
-from .enums import BetState, AnswerChoice
-from .models import CreateBetModel, CreateBetBackgroundModel, WsBetMessageModel
-
+from .enums import AnswerChoice, BetState
+from .models import CreateBetBackgroundModel, CreateBetModel, WsBetMessageModel
 
 __all__ = [
     "BetState",

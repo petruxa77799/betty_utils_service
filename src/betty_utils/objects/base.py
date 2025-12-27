@@ -1,5 +1,5 @@
-from pydantic import BaseModel, model_validator
 import ujson
+from pydantic import BaseModel, model_validator
 
 
 class KafkaBaseModel(BaseModel):

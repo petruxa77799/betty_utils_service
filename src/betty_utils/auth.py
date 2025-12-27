@@ -1,9 +1,9 @@
 import os
+from datetime import UTC, datetime
 from functools import wraps
 
 import jwt
 from jwt.exceptions import InvalidTokenError
-from datetime import datetime, UTC
 
 from .exception import AuthRequiredException
 

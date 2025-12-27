@@ -1,24 +1,10 @@
-from .exceptions import (
-    PartnerNotFound,
-    EventNotFound,
-    LeaderboardNotFound,
-    AuthRequiredException,
-    UserNotFound,
-    UserNotAvailable,
-    UserAlreadyExists,
-    WalletNotAvailable,
-    WalletNotFound,
-    EnterEventException,
-    CodeNotFoundError,
-    TelegramValidationFailError,
-)
 from ._error_codes import (
-    ErrorCode,
-    PartnerErrorCode,
-    EventErrorCode,
-    UserErrorCode,
-    LeaderboardErrorCode,
     AuthErrorCode,
+    ErrorCode,
+    EventErrorCode,
+    LeaderboardErrorCode,
+    PartnerErrorCode,
+    UserErrorCode,
     WalletErrorCode,
 )
 from ._error_statuses import (
@@ -26,6 +12,20 @@ from ._error_statuses import (
     BETTY_HTTP_401_UNAUTHORIZED,
     BETTY_HTTP_404_NOT_FOUND,
     BETTY_HTTP_500_INTERNAL_SERVER_ERROR,
+)
+from .exceptions import (
+    AuthRequiredException,
+    CodeNotFoundError,
+    EnterEventException,
+    EventNotFound,
+    LeaderboardNotFound,
+    PartnerNotFound,
+    TelegramValidationFailError,
+    UserAlreadyExists,
+    UserNotAvailable,
+    UserNotFound,
+    WalletNotAvailable,
+    WalletNotFound,
 )
 
 __all__ = ("exception_mapping_dict",)
