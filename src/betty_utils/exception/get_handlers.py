@@ -64,11 +64,7 @@ def get_handler(
     request_body: str,
     headers: dict,
 ) -> dict[str, Any]:
-    status_code, error_code = exception_mapping_dict.get(type(exc))
-    if not status_code:
-        exc_str = get_pretty_traceback(exc)  # noqa: F841
-        # TODO: Add logs to kafka here
-        status_code, error_code = exception_mapping_dict.get(Exception)
+    status_code, error_code = exception_mapping_dict.get(type(exc), exception_mapping_dict[Exception])
     body = get_body(error_code, exc)
     log_exception(
         logger, status_code, method, url, request_body, headers, body, str(exc)
