@@ -6,6 +6,11 @@ class EnterEventModel(KafkaBaseModel):
     user_id: int
 
 
+class WalletModel(KafkaBaseModel):
+    id: int
+    result: int | None = None
+
+
 __all__ = [
     "EnterEventModel",
 ]
