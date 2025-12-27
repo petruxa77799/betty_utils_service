@@ -1,5 +1,8 @@
-from .models import EnterEventModel
+from .enums import ResultUpdateType
+from .models import EnterEventModel, WsResultUpdateMessageModel
+
 
 __all__ = [
     "EnterEventModel",
+    "WsResultUpdateMessageModel",
 ]

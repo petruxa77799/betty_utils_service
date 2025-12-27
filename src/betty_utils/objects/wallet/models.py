@@ -1,4 +1,5 @@
 from ..base import KafkaBaseModel
+from .enums import ResultUpdateType
 
 
 class EnterEventModel(KafkaBaseModel):
@@ -9,6 +10,17 @@ class EnterEventModel(KafkaBaseModel):
 class WalletModel(KafkaBaseModel):
     id: int
     result: int | None = None
+    update_type: ResultUpdateType
+
+
+class WsResultUpdateMessageModel(KafkaBaseModel):
+    wallet_id: int
+    bet: dict | None = None
+    profit: int
+    right_answer: str | None = None
+    state: BetState | None
+    invite: dict | None = None
+    update_type: ResultUpdateType
 
 
 __all__ = [
