@@ -6,4 +6,5 @@ __all__ = [
     "EnterEventModel",
     "WalletModel",
     "WsResultUpdateMessageModel",
+    "ResultUpdateType",
 ]
