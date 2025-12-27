@@ -1,5 +1,5 @@
 from ..base import KafkaBaseModel
-from .enums import AnswerChoice, BetState, ResultUpdateType
+from .enums import AnswerChoice, BetState
 
 
 class CreateBetModel(KafkaBaseModel):
@@ -12,8 +12,8 @@ class CreateBetBackgroundModel(CreateBetModel):
     state: BetState
     result: int
 
+
 __all__ = [
     "CreateBetModel",
     "CreateBetBackgroundModel",
-    "WsBetMessageModel",
 ]

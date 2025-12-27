@@ -1,4 +1,5 @@
 from ..base import KafkaBaseModel
+from ..bet.enums import BetState
 from .enums import ResultUpdateType
 
 
@@ -25,4 +26,6 @@ class WsResultUpdateMessageModel(KafkaBaseModel):
 
 __all__ = [
     "EnterEventModel",
+    "WalletModel",
+    "WsResultUpdateMessageModel"
 ]
