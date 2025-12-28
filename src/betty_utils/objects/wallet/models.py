@@ -4,6 +4,7 @@ from .enums import ResultUpdateType
 
 
 class EnterEventModel(KafkaBaseModel):
+    wallet_id: int | None = None
     event_id: int
     user_id: int
 
