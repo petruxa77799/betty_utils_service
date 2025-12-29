@@ -20,7 +20,7 @@ class WsResultUpdateMessageModel(KafkaBaseModel):
     bet: dict | None = None
     profit: int
     right_answer: str | None = None
-    state: BetState | None
+    state: BetState | None = None
     invite: dict | None = None
     update_type: ResultUpdateType
 
