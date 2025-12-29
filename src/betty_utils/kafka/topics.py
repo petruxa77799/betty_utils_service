@@ -13,3 +13,4 @@ class KafkaTopics(StrEnum):
     PROMO_ANSWER_TOPIC = "dev.promo_answer_topic"  # PROMO_ANSWER_TOPIC -> PROMO_TOPIC
     WALLETS_TOPIC = "dev.wallets_topic"
     WALLETS_CALLBACK_TOPIC = "dev.wallets_callback_topic"
+    WS_EVENT_TOPIC = "dev.ws_event_topic"
