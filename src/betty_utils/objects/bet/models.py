@@ -7,7 +7,7 @@ from .enums import AnswerChoice, BetState
 class CreateBetModel(KafkaBaseModel):
     wallet_id: int
     market_id: int
-    answer: AnswerChoice
+    answer: AnswerChoice | None = None
     answer_text: constr(to_lower=True, min_length=1, max_length=27) | None = None
 
     @model_validator(mode="after")
