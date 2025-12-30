@@ -1,3 +1,5 @@
+from typing import Self
+
 from pydantic import constr, model_validator
 
 from ..base import KafkaBaseModel
