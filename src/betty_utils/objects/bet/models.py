@@ -1,4 +1,4 @@
-from pydantic import constr
+from pydantic import constr, model_validator
 
 from ..base import KafkaBaseModel
 from .enums import AnswerChoice, BetState
