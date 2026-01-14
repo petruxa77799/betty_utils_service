@@ -1,14 +1,10 @@
-from pydantic import BaseModel
+from ..base import KafkaBaseModel
 
 
-class Marketing(BaseModel):
+class MarketingModel(KafkaBaseModel):
     id: int
     erid: str
     title: str
 
 
-__all__ = [
-    "EnterEventModel",
-    "WalletModel",
-    "WsResultUpdateMessageModel"
-]
+__all__ = ["MarketingModel"]

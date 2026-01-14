@@ -25,8 +25,4 @@ class WsResultUpdateMessageModel(KafkaBaseModel):
     update_type: ResultUpdateType
 
 
-__all__ = [
-    "EnterEventModel",
-    "WalletModel",
-    "WsResultUpdateMessageModel"
-]
+__all__ = ["EnterEventModel", "WalletModel", "WsResultUpdateMessageModel"]

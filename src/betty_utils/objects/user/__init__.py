@@ -1,5 +1,6 @@
-from .models import UserCallbackModel
+from .models import UserCallbackModel, UserAfterCreateModel
 
 __all__ = [
     "UserCallbackModel",
+    "UserAfterCreateModel",
 ]

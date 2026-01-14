@@ -14,3 +14,7 @@ class KafkaTopics(StrEnum):
     WALLETS_TOPIC = "dev.wallets_topic"
     WALLETS_CALLBACK_TOPIC = "dev.wallets_callback_topic"
     WS_EVENT_TOPIC = "dev.ws_event_topic"
+    # from sending service
+    AFTER_CREATE_USER_TOPIC = "dev.after_create_user_topic"
+    MESSAGES_TOPIC = "dev.messages_topic"
+    DISTRIBUTION_TOPIC = "dev.distribution_topic"

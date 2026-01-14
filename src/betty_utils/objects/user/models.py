@@ -12,6 +12,11 @@ class UserCallbackModel(KafkaBaseModel):
     invite_uuid: UUID | None
 
 
+class UserAfterCreateModel(KafkaBaseModel):
+    user_id: int
+
+
 __all__ = [
     "UserCallbackModel",
+    "UserAfterCreateModel",
 ]

@@ -1,6 +1,6 @@
-from .models import Marketing
+from .models import MarketingModel
 
 
 __all__ = [
-    "Marketing",
+    "MarketingModel",
 ]
