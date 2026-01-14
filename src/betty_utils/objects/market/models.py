@@ -2,6 +2,7 @@ from datetime import datetime
 
 from ..base import KafkaBaseModel
 from .enums import AnswerTypes
+from ..marketing import Marketing
 
 
 class WSEventMarketModel(KafkaBaseModel):
@@ -19,3 +20,4 @@ class WSEventMarketModel(KafkaBaseModel):
     rank: int
     event_id: int
     action: str  # ToDo: implement enum
+    marketing: Marketing | None = None
