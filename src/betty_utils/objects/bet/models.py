@@ -26,6 +26,7 @@ class CreateBetModel(KafkaBaseModel):
 class CreateBetBackgroundModel(CreateBetModel):
     state: BetState
     result: int
+    right_answer_image_url: str | None = None
 
 
 __all__ = [
