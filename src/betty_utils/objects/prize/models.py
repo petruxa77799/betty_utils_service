@@ -1,6 +1,6 @@
 from typing import Self
 
-from pydantic import constr, model_validator
+from pydantic import BaseModel
 from .enums import PrizeType
 
 
