@@ -26,6 +26,7 @@ from .exceptions import (
     UserNotFound,
     WalletNotAvailable,
     WalletNotFound,
+    SpinBalanceZero,
 )
 
 __all__ = ("exception_mapping_dict",)
@@ -56,5 +57,6 @@ exception_mapping_dict = {
         BETTY_HTTP_400_BAD_REQUEST,
         AuthErrorCode.TELEGRAM_VALIDATION_FAIL,
     ),
+    SpinBalanceZero: (BETTY_HTTP_400_BAD_REQUEST, WalletErrorCode.SPIN_BALANCE_ZERO),
     Exception: (BETTY_HTTP_500_INTERNAL_SERVER_ERROR, ErrorCode.UNHANDLED_ERROR),
 }

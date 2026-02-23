@@ -41,6 +41,7 @@ class UserErrorCode(StrEnum):
 class WalletErrorCode(StrEnum):
     WALLET_NOT_FOUND = "WA_001"
     WALLET_NOT_AVAILABLE = "WA_002"
+    SPIN_BALANCE_ZERO = "WA_003"
 
 
 class PartnerErrorCode(StrEnum):
