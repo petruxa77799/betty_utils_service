@@ -5,6 +5,7 @@ from .enums import PrizeType
 
 
 class Prize(BaseModel):
+    id: int | None = None
     title: str
     image_url: str
     image_detail_url: str
